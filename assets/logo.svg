@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b0e12"/>
+      <stop offset="100%" stop-color="#0b0e12"/>
+    </linearGradient>
+    <linearGradient id="cubeEdge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#c8d3dc"/>
+      <stop offset="100%" stop-color="#c8d3dc" stop-opacity="0.4"/>
+    </linearGradient>
+    <linearGradient id="keyGlow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#39ff88"/>
+      <stop offset="100%" stop-color="#39ff88" stop-opacity="0.3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="256" height="256" fill="#0b0e12"/>
+
+  <!-- Subtle terminal grid lines -->
+  <g stroke="#c8d3dc" stroke-opacity="0.06" stroke-width="0.5">
+    <line x1="0" y1="64" x2="256" y2="64"/>
+    <line x1="0" y1="128" x2="256" y2="128"/>
+    <line x1="0" y1="192" x2="256" y2="192"/>
+    <line x1="64" y1="0" x2="64" y2="256"/>
+    <line x1="128" y1="0" x2="128" y2="256"/>
+    <line x1="192" y1="0" x2="192" y2="256"/>
+  </g>
+
+  <!-- Wireframe cube - isometric, off-center composition -->
+  <!-- Front face -->
+  <polygon points="68,172 148,172 148,92 68,92" fill="none" stroke="#c8d3dc" stroke-width="1.8" stroke-opacity="0.85"/>
+  <!-- Top face -->
+  <polygon points="68,92 148,92 188,52 108,52" fill="none" stroke="#c8d3dc" stroke-width="1.8" stroke-opacity="0.7"/>
+  <!-- Right face -->
+  <polygon points="148,92 188,52 188,132 148,172" fill="none" stroke="#c8d3dc" stroke-width="1.8" stroke-opacity="0.55"/>
+
+  <!-- Inner structural cross-lines for depth -->
+  <line x1="108" y1="52" x2="108" y2="132" stroke="#c8d3dc" stroke-width="1" stroke-opacity="0.3"/>
+  <line x1="108" y1="132" x2="188" y2="132" stroke="#c8d3dc" stroke-width="1" stroke-opacity="0.3"/>
+  <line x1="68" y1="92" x2="108" y2="52" stroke="#c8d3dc" stroke-width="1" stroke-opacity="0.25"/>
+
+  <!-- Diagonal accent lines on cube faces (precision engineering feel) -->
+  <line x1="82" y1="158" x2="134" y2="106" stroke="#c8d3dc" stroke-width="0.8" stroke-opacity="0.2"/>
+  <line x1="94" y1="158" x2="138" y2="114" stroke="#c8d3dc" stroke-width="0.8" stroke-opacity="0.15"/>
+
+  <!-- Keyhole shape on front face - glowing green -->
+  <!-- Keyhole circle -->
+  <circle cx="108" cy="128" r="13" fill="none" stroke="#39ff88" stroke-width="2.5"/>
+  <circle cx="108" cy="128" r="13" fill="#39ff88" fill-opacity="0.12"/>
+
+  <!-- Keyhole stem/trapezoid -->
+  <polygon points="101,138 115,138 118,158 98,158" fill="none" stroke="#39ff88" stroke-width="2.5"/>
+  <polygon points="101,138 115,138 118,158 98,158" fill="#39ff88" fill-opacity="0.08"/>
+
+  <!-- Keyhole inner cutout -->
+  <circle cx="108" cy="128" r="5" fill="#0b0e12"/>
+  <circle cx="108" cy="128" r="5" fill="#39ff88" fill-opacity="0.15"/>
+
+  <!-- Cursor arrow unlocking from keyhole -->
+  <polygon points="108,136 108,120 118,128 112,128 118,142 108,136" fill="#ff7a1a" stroke="#ff7a1a" stroke-width="0.5" stroke-opacity="0.9"/>
+
+  <!-- Phosphor glow dots around keyhole (activation pulse) -->
+  <circle cx="85" cy="118" r="1.5" fill="#39ff88" fill-opacity="0.7"/>
+  <circle cx="130" cy="110" r="1" fill="#39ff88" fill-opacity="0.5"/>
+  <circle cx="90" cy="148" r="1" fill="#39ff88" fill-opacity="0.4"/>
+  <circle cx="125" cy="145" r="1.5" fill="#39ff88" fill-opacity="0.6"/>
+  <circle cx="78" cy="135" r="0.8" fill="#39ff88" fill-opacity="0.3"/>
+
+  <!-- Orange accent brackets at cube corners (technical framing) -->
+  <polyline points="62,98 62,86 74,86" fill="none" stroke="#ff7a1a" stroke-width="1.8" stroke-opacity="0.8"/>
+  <polyline points="182,58 194,58 194,70" fill="none" stroke="#ff7a1a" stroke-width="1.8" stroke-opacity="0.8"/>
+  <polyline points="182,166 194,166 194,154" fill="none" stroke="#ff7a1a" stroke-width="1.8" stroke-opacity="0.6"/>
+
+  <!-- Terminal cursor indicator bottom-left -->
+  <rect x="58" y="196" width="6" height="10" fill="#39ff88" fill-opacity="0.8"/>
+  <line x1="68" y1="201" x2="90" y2="201" stroke="#39ff88" stroke-width="1" stroke-opacity="0.4"/>
+
+  <!-- Small technical hash marks -->
+  <line x1="148" y1="196" x2="156" y2="196" stroke="#c8d3dc" stroke-width="1" stroke-opacity="0.3"/>
+  <line x1="148" y1="200" x2="160" y2="200" stroke="#c8d3dc" stroke-width="1" stroke-opacity="0.2"/>
+  <line x1="148" y1="204" x2="154" y2="204" stroke="#c8d3dc" stroke-width="1" stroke-opacity="0.15"/>
+
+  <!-- Tiny wordmark -->
+  <text x="58" y="222" font-family="monospace" font-size="7" fill="#c8d3dc" fill-opacity="0.35" letter-spacing="1.5">C4D://PS-ACT-8794</text>
+</svg>
